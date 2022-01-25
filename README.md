@@ -119,11 +119,27 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         3. Use is_authenticated method to show link
            to authenticated user
         4. Test it out :)
-        
+
         modified:   README.md
         modified:   apps/core/templates/core/base.html
         modified:   apps/vendor/templates/vendor/vendor_admin.html
         modified:   apps/vendor/views.py
+
+
+#### 6.4 Logout user
+
+        STEPS:
+
+        1. In vendor/urls.py: Import auth_views
+        2. Use it to create path to logout
+        3. Add link to vendor_admin to logout
+        4. Test it out :)
+
+        NOTE: After logging out, it return to admin panel page
+
+        modified:   README.md
+        modified:   apps/vendor/templates/vendor/vendor_admin.html
+        modified:   apps/vendor/urls.py  
 
 
 

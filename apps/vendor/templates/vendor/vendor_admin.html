@@ -6,7 +6,7 @@
     <div class="box">
         <h1 class="title">Vendor admin - <span style="color:red;">{{ vendor.name }}</span></h1>
 
-        <a href="#" class="button is-danger is-uppercase">Log out</a>
+        <a href="{% url 'vendor:logout' %}" class="button is-danger is-uppercase">Log out</a>
     </div>
 
     <div class="box">
