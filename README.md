@@ -149,3 +149,13 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   apps/vendor/views.py
         modified:   config/settings.py
 
+
+#### 6.6 Making vendor to login and logout using django.contrib.auth
+
+        modified:   README.md
+        modified:   apps/vendor/templates/vendor/become_vendor.html
+        modified:   apps/vendor/urls.py
+        modified:   apps/vendor/views.py
+        modified:   config/settings.py
+
+
