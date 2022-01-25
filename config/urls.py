@@ -14,6 +14,9 @@ urlpatterns = [
 
     # Product
     path('', include('apps.product.urls', namespace='product')),
+
+    # Vendor
+    path('', include('apps.vendor.urls', namespace='vendor')),
 ]
 
 

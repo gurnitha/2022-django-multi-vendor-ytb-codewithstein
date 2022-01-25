@@ -48,3 +48,15 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         new file:   apps/product/urls.py
         modified:   apps/product/views.py
         modified:   config/urls.py
+
+
+#### 4. Create static pages: add_product, become_vendor, login, vendor_admin pages
+
+        modified:   apps/core/templates/core/base.html
+        new file:   apps/vendor/templates/vendor/add_product.html
+        new file:   apps/vendor/templates/vendor/become_vendor.html
+        new file:   apps/vendor/templates/vendor/login.html
+        new file:   apps/vendor/templates/vendor/vendor_admin.html
+        new file:   apps/vendor/urls.py
+        modified:   apps/vendor/views.py
+        modified:   config/urls.py

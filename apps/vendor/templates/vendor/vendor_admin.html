@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Vendor admin | {% endblock %}
+
+{% block content %}
+    <div class="box">
+        <h1 class="title">Vendor admin - {{ vendor.name }}</h1>
+
+        <a href="#" class="button is-danger is-uppercase">Log out</a>
+    </div>
+
+    <div class="box">
+        <h2 class="is-size-3 mb-4">My products</h2>
+
+        <a href="{% url 'vendor:add_product' %}" class="button is-dark is-uppercase mb-6">Add product</a>
+
+            <table class="table is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                        <tr>
+                            <td><a href="#">Product title 1</a></td>
+                            <td>$5.55</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Product title 2</a></td>
+                            <td>$4.44</td>
+                        </tr>
+                </tbody>
+            </table>
+            <p>You don't have any products yet...</p>
+    </div>
+{% endblock %}
