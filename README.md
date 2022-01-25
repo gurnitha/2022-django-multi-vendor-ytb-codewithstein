@@ -108,3 +108,22 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   README.md
         modified:   apps/vendor/templates/vendor/become_vendor.html
         modified:   apps/vendor/views.py
+
+
+#### 6.3 Showing the authenticated user with restriction
+
+        STEPS:
+
+        1. Import login_required
+        2. Create instance of the user (vendor)
+        3. Use is_authenticated method to show link
+           to authenticated user
+        4. Test it out :)
+        
+        modified:   README.md
+        modified:   apps/core/templates/core/base.html
+        modified:   apps/vendor/templates/vendor/vendor_admin.html
+        modified:   apps/vendor/views.py
+
+
+
