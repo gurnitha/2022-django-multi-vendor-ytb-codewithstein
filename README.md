@@ -142,4 +142,10 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   apps/vendor/urls.py  
 
 
+#### 6.5 Darurat (It does not work. Has to back to 6.4)
+
+        modified:   apps/vendor/templates/vendor/login.html
+        modified:   apps/vendor/urls.py
+        modified:   apps/vendor/views.py
+        modified:   config/settings.py
 

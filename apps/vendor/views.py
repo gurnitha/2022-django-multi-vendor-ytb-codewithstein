@@ -45,5 +45,5 @@ def add_product(request):
     return render(request, 'vendor/add_product.html')
 
 
-def vendor_login(request):
-    return render(request, 'vendor/login.html')
+# def vendor_login(request):
+#     return render(request, 'vendor/login.html')

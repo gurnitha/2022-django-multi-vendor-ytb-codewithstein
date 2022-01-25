@@ -128,3 +128,8 @@ STATICFILES_DIRS = [
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
+
+# LOGIN
+LOGIN_URL = 'login' # Refer to path name 'login'
+LOGIN_REDIRECT_URL = 'vendor_admin' # Refer to path name 'vendor_admin'
+LOGOUT_REDIRECT_URL = 'frontpage' # Refer to path name 'frontpage'
