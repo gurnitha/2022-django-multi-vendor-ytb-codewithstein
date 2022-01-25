@@ -35,3 +35,16 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         new file:   apps/core/urls.py
         modified:   apps/core/views.py
         modified:   config/urls.py
+
+
+#### 3. Create static pages: product, category and search in product app
+
+        modified:   README.md
+        modified:   apps/core/templates/core/base.html
+        modified:   apps/core/templates/core/frontpage.html
+        new file:   apps/product/templates/product/category.html
+        new file:   apps/product/templates/product/product.html
+        new file:   apps/product/templates/product/search.html
+        new file:   apps/product/urls.py
+        modified:   apps/product/views.py
+        modified:   config/urls.py
