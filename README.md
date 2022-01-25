@@ -72,3 +72,14 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         new file:   static/img/img-large.jpeg
         new file:   static/img/img.jpeg
         new file:   static/js/main.js
+
+
+### 6. VENDORS
+--------------
+
+#### 6.1 Create Vendor model, create and apply migration
+
+        modified:   README.md
+        modified:   apps/vendor/admin.py
+        new file:   apps/vendor/migrations/0001_initial.py
+        modified:   apps/vendor/models.py
