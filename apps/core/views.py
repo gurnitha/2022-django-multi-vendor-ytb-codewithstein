@@ -1,3 +1,13 @@
+# apps/core/urls.py
+
+# Django modules
 from django.shortcuts import render
 
-# Create your views here.
+# Locals
+
+def frontpage(request):
+    return render(request, 'core/frontpage.html')
+
+
+def contact(request):
+    return render(request, 'core/contact.html')

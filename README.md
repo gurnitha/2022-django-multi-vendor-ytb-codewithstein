@@ -24,3 +24,14 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
             └───__pycache__
 
         modified:   README.md
+
+
+#### 2. Create static pages: frontpage and contact in core app
+
+        modified:   README.md
+        new file:   apps/core/templates/core/base.html
+        new file:   apps/core/templates/core/contact.html
+        new file:   apps/core/templates/core/frontpage.html
+        new file:   apps/core/urls.py
+        modified:   apps/core/views.py
+        modified:   config/urls.py
