@@ -60,3 +60,15 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         new file:   apps/vendor/urls.py
         modified:   apps/vendor/views.py
         modified:   config/urls.py
+
+
+#### 5. Add and load static and media files
+
+        modified:   README.md
+        modified:   apps/product/templates/product/product.html
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   static/css/main.css
+        new file:   static/img/img-large.jpeg
+        new file:   static/img/img.jpeg
+        new file:   static/js/main.js
