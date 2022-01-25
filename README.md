@@ -79,7 +79,32 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
 
 #### 6.1 Create Vendor model, create and apply migration
 
+        STEPS:
+
+        1. Create model
+        2. Create migration
+        3. Apply migration
+        4. Register model to admin
+
         modified:   README.md
         modified:   apps/vendor/admin.py
         new file:   apps/vendor/migrations/0001_initial.py
         modified:   apps/vendor/models.py
+
+
+#### 6.2 Add logic to become_vendor method and  Use UserCreationForm to create a new user
+
+        STEPS:
+
+        1. In vendor/views.py:
+           - import UserCreationForm
+           - import redirect
+        2. In vendor/views.py (become_vendor)
+           - load UserCreationForm
+           - add logic to create a user
+        3. Load the form to become_vendor page
+        4. Test it out :)
+
+        modified:   README.md
+        modified:   apps/vendor/templates/vendor/become_vendor.html
+        modified:   apps/vendor/views.py
