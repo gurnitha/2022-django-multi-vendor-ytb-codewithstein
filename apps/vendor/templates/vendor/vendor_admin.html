@@ -13,26 +13,27 @@
         <h2 class="is-size-3 mb-4">My products</h2>
 
         <a href="{% url 'vendor:add_product' %}" class="button is-dark is-uppercase mb-6">Add product</a>
-
-            <table class="table is-fullwidth">
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-
-                <tbody>
+            
+            {% if products %}            
+                <table class="table is-fullwidth">
+                    <thead>
                         <tr>
-                            <td><a href="#">Product title 1</a></td>
-                            <td>$5.55</td>
+                            <th>Title</th>
+                            <th>Price</th>
                         </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for product in products %}
                         <tr>
-                            <td><a href="#">Product title 2</a></td>
-                            <td>$4.44</td>
+                            <td><a href="#">{{ product.title }}</a></td>
+                            <td>${{ product.price }}</td>
                         </tr>
-                </tbody>
-            </table>
-            <p>You don't have any products yet...</p>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>You don't have any products yet...</p>
+            {% endif %}
     </div>
 {% endblock %}

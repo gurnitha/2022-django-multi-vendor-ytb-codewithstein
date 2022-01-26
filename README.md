@@ -169,3 +169,10 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   apps/product/admin.py
         new file:   apps/product/migrations/0001_initial.py
         modified:   apps/product/models.py
+
+
+#### 7.2 Show list of products in admin area
+
+        modified:   README.md
+        modified:   apps/vendor/templates/vendor/vendor_admin.html
+        modified:   apps/vendor/views.py
