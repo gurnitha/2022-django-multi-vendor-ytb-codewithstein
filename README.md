@@ -176,3 +176,13 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   README.md
         modified:   apps/vendor/templates/vendor/vendor_admin.html
         modified:   apps/vendor/views.py
+
+
+#### 7.3 Make it possible for vendors to add products
+
+        modified:   README.md
+        new file:   apps/vendor/forms.py
+        modified:   apps/vendor/templates/vendor/add_product.html
+        modified:   apps/vendor/views.py
+        new file:   media/uploads/img-large.jpeg
+        new file:   media/uploads/img-large_uQsXPIi.jpeg

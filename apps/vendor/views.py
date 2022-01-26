@@ -10,6 +10,7 @@ from django.utils.text import slugify
 # Locals
 from apps.vendor.models import Vendor
 from apps.product.models import Category, Product
+from apps.vendor.forms import ProductForm
 
 # Create your models here.
 
@@ -48,5 +49,20 @@ def vendor_admin(request):
     return render(request, 'vendor/vendor_admin.html', context)
 
 
+@login_required
 def add_product(request):
-    return render(request, 'vendor/add_product.html')
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.vendor = request.user.vendor
+            product.slug = slugify(product.title)
+            product.save()
+
+            return redirect('vendor:vendor_admin')
+    else:
+        form = ProductForm()
+
+    context = {'form': form}
+    return render(request, 'vendor/add_product.html', context)
