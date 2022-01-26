@@ -5,20 +5,42 @@
 
 {% block content %}
 
-    <figure class="image is-4by3 mb-6">
-        <img src="{% static 'img/img-large.jpeg' %}">
-    </figure>
+    {% if product.image %}
+        <figure class="image is-4by3 mb-6">
+            <img src="{{ product.image.url }}">
+        </figure>
+    {% endif %}
 
-    <h1 class="title">Product title, $14.99</h1>
+    <h1 class="title">{{ product.title }}, ${{ product.price }}</h1>
 
-    <p class="mb-6"><span class="tag is-dark">Vendor name</span></p>
+    <p class="mb-6"><span class="tag is-dark">{{ product.vendor.name }}</span></p>
 
+    <p>{{ product.description }}</p>
+
+    {% if similar_products %}
         <hr>
 
         <div class="columns is-multiline">
             <div class="column is-12">
                 <h2 class="subtitle">Similar products</h2>
             </div>
+
+            <div class="column is-3 product-list-item">
+                <div class="box">
+                    <figure class="image is-4by3 mb-4">
+                        <img src="{{ product.get_thumbnail }}">
+                    </figure>
+
+                    <h2 class="subtitle">{{ product.title }}</h2>
+
+                    <h3 class="price is-size-6 mb-5">${{ product.price }}</h3>
+
+                    <hr>
+
+                    <a href="{% url 'product:product' product.category.slug product.slug %}" class="button is-dark is-uppercase">View</a>
+                </div>
+            </div>
         </div>
+    {% endif %}
         
 {% endblock %}

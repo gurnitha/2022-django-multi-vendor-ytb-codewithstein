@@ -10,18 +10,7 @@
         </div>
 
         {% for product in newest_products %}
-            <div class="column is-3 product-list-item">
-                <div class="box">
-                    <figure class="image is-4by3 mb-4">
-                        <img src="{{ product.thumbnail.url }}">
-                    </figure>
-                    <h2 class="subtitle">{{ product.title }}</h2>
-                    <h3 class="price is-size-8 mb-5">${{ product.price }}</h3>
-                    <hr>
-                    <a href="{% url 'product:product' %}" class="button is-dark is-uppercase">View</a>
-                </div>
-                  
-            </div>          
+            {% include 'product/parts/list_item.html' %}          
         {% endfor %}
 
         <!-- {% include 'product/parts/list_item.html' %} -->

@@ -195,3 +195,17 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   apps/core/views.py
         new file:   media/uploads/uploads/img-large_uQsXPIi.jpeg
         modified:   static/css/main.css
+
+
+#### 7.5 (Darurat, doest now work) Show detail view of a product
+
+        NOTE: It shows error, I could not fix it
+
+        NoReverseMatch at /
+        Reverse for 'product' with arguments '('', '')' not found. 1 pattern(s) tried: ['(?P<category_slug>[-a-zA-Z0-9_]+)/(?P<product_slug>[-a-zA-Z0-9_]+)/$']
+        
+        modified:   README.md
+        modified:   apps/core/templates/core/frontpage.html
+        modified:   apps/product/templates/product/product.html
+        modified:   apps/product/urls.py
+        modified:   apps/product/views.py
