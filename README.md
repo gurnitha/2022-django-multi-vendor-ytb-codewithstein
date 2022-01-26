@@ -159,3 +159,13 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   config/settings.py
 
 
+### 7. PRODUCT
+--------------
+
+
+#### 7.1 Create Category and Product models
+
+        modified:   README.md
+        modified:   apps/product/admin.py
+        new file:   apps/product/migrations/0001_initial.py
+        modified:   apps/product/models.py
