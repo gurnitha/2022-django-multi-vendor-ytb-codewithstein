@@ -186,3 +186,12 @@ Github repository: https://github.com/gurnitha/2022-django-multi-vendor-ytb-code
         modified:   apps/vendor/views.py
         new file:   media/uploads/img-large.jpeg
         new file:   media/uploads/img-large_uQsXPIi.jpeg
+
+
+#### 7.4 Show newest product on the frontpage
+
+        modified:   README.md
+        modified:   apps/core/templates/core/frontpage.html
+        modified:   apps/core/views.py
+        new file:   media/uploads/uploads/img-large_uQsXPIi.jpeg
+        modified:   static/css/main.css
